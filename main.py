@@ -8,4 +8,9 @@ from outils.operation import *
 # print("75 en décimale vaut", decimal_to_binary(75), "en binaire.")
 # print("16 en décimale vaut", decimal_to_binary(16), "en binaire.")
 
-print(split_number(123456))
+# print(split_number(123456))
+
+print(element_addition(1, 1))
+print(element_addition(1, 0))
+print(element_addition(0, 0))
+print(element_addition(0, 1))
