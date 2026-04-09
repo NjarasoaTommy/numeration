@@ -12,3 +12,8 @@ def element_addition(a, b):
     else:
         return (0, 1)
         
+def join_number(a):
+    res = a[0]
+    for x in a[1:]:
+        res = (res * 10 if res != 0 else 10) + x
+    return res

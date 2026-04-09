@@ -10,7 +10,11 @@ from outils.operation import *
 
 # print(split_number(123456))
 
-print(element_addition(1, 1))
-print(element_addition(1, 0))
-print(element_addition(0, 0))
-print(element_addition(0, 1))
+# print(element_addition(1, 1))
+# print(element_addition(1, 0))
+# print(element_addition(0, 0))
+# print(element_addition(0, 1))
+
+print(join_number([1, 0, 3]))
+print(join_number([4, 9, 0, 6, 5]))
+print(join_number([2, 8, 6, 0, 0]))
