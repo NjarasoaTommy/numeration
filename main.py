@@ -15,6 +15,10 @@ from outils.operation import *
 # print(element_addition(0, 0))
 # print(element_addition(0, 1))
 
-print(join_number([1, 0, 3]))
-print(join_number([4, 9, 0, 6, 5]))
-print(join_number([2, 8, 6, 0, 0]))
+# print(join_number([1, 0, 3]))
+# print(join_number([4, 9, 0, 6, 5]))
+# print(join_number([2, 8, 6, 0, 0]))
+
+print(addition(decimal_to_binary(45), decimal_to_binary(5)))
+print(addition(11, 1))
+print(addition(100, 1))
