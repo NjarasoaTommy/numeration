@@ -1,0 +1,4 @@
+run_tests:
+    image: python:3.12.13-slim-trixie
+    script:
+        -pytest
