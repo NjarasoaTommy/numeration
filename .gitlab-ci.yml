@@ -2,16 +2,20 @@ variables:
     IMAGE_NAME: njarasoatommy/gitlab_pipelines
     TAG_NAME: numeration-1.0
 
+stages:
+    - test
+    - build
+
 run_tests:
+    stage: test
     image: python:3.12.13-slim-trixie
     before_script:
         - pip install pytest
     script:
         - pytest
-        - echo "USER=$REGISTRY_USER"
-        - echo "PASS length=${#REGISTRY_PASS}"
 
 build_image:
+    stage: build
     image: docker:29.4.0
     services:
         - docker:29.4.0-dind
