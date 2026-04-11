@@ -8,6 +8,8 @@ run_tests:
         - pip install pytest
     script:
         - pytest
+        - echo "USER=$REGISTRY_USER"
+        - echo "PASS length=${#REGISTRY_PASS}"
 
 build_image:
     image: docker:29.4.0
