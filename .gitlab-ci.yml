@@ -4,8 +4,10 @@ variables:
 
 run_tests:
     image: python:3.12.13-slim-trixie
+    before_script:
+        - pip install pytest
     script:
-        pytest
+        - pytest
 
 build_image:
     image: docker:29.4.0
@@ -14,7 +16,7 @@ build_image:
     variables:
         DOCKER_TLS_CERTDIR: "/certs"
     before_script:
-        - docker login -u $REGISTRY_USER -p REGISTRY_PASS
+        - docker login -u $REGISTRY_USER -p $REGISTRY_PASS
     script:
         - docker build -t $IMAGE_NAME:$TAG_NAME .
-        - docker push $IMAGE_NAME:$tag_NAME
+        - docker push $IMAGE_NAME:$TAG_NAME
