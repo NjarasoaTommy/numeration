@@ -1,6 +1,6 @@
 run_tests:
     image: python:3.12.13-slim-trixie
     before_script:
-        -pip install pytest
+        - pip install pytest
     script:
-        -pytest
+        - pytest
