@@ -42,7 +42,7 @@ jobs:
   docker_image_build:
 
     runs-on: ubuntu-latest
-    need: build
+    needs: build
 
     if: github.event_name == 'push'
     steps:
